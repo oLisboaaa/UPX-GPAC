@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Costura & Bordado Certa</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="header">
+      <h1>
+        <ul class="ulHeader">
+          <li><a href="/publicSrc/publicIndex.html">[LOGO]</a></li>
+          <li><a href="/publicSrc/publicIndex.html">Costura Certa & Bordado Certo</a></li>
+          <li></li>
+          <li></li>
+          <li>
+            <a href="/login/login.html"
+              ><img class="imgfooter" src="/img/login.png" alt="" />Login</a
+            >
+          </li>
+        </ul>
+      </h1>
+      <div>
+        <ul class="ulHeader">
+          <li><a href="/publicSrc/publicConsultPed.html">Consultar Pedidos</a></li>
+          <li><a href="/publicSrc/publicHistPed.html">Histórico de pedidos</a></li>
+        </ul>
+      </div>
+    </header>
+    <div class="mainbg">
+      <main id="main"></main>
+    </div>
+    <footer class="footer">
+      <h1>
+        <ul class="ulFooter">
+          <li><a href="/publicSrc/publicIndex.html">[LOGO]</a></li>
+          <li><a href="/publicSrc/publicIndex.html">Costura Certa & Bordado Certo</a></li>
+          <li></li>
+          <li></li>
+          <li>
+            <a href="/login/login.html"
+              ><img class="imgfooter" src="/img/login.png" alt="" />Login</a
+            >
+          </li>
+        </ul>
+      </h1>
+    </footer>
+
+    <!-- JavaScript para adicionar a classe 'active' ao link atual -->
+    <script>
+      // Seleciona todos os links do menu de Acesso Rápido
+      const links = document.querySelectorAll(".ulHeader a");
+
+      // Pega a URL atual da página
+      const currentUrl = window.location.pathname;
+
+      // Itera por cada link
+      links.forEach((link) => {
+        // Se a URL do link for igual à URL atual, adiciona a classe 'active'
+        if (link.getAttribute("href") === currentUrl) {
+          link.classList.add("active");
+        }
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,233 @@
+body,
+html {
+  font-family: "Alegreya", serif;
+  color: black;
+  background: radial-gradient(
+        35.36% 35.36% at 100% 25%,
+        #0000 66%,
+        #ea8694 68% 70%,
+        #0000 72%
+      )
+      32px 32px / calc(2 * 32px) calc(2 * 32px),
+    radial-gradient(
+        35.36% 35.36% at 0 75%,
+        #0000 66%,
+        #ea8694 68% 70%,
+        #0000 72%
+      )
+      32px 32px / calc(2 * 32px) calc(2 * 32px),
+    radial-gradient(
+        35.36% 35.36% at 100% 25%,
+        #0000 66%,
+        #ea8694 68% 70%,
+        #0000 72%
+      )
+      0 0 / calc(2 * 32px) calc(2 * 32px),
+    radial-gradient(
+        35.36% 35.36% at 0 75%,
+        #0000 66%,
+        #ea8694 68% 70%,
+        #0000 72%
+      )
+      0 0 / calc(2 * 32px) calc(2 * 32px),
+    repeating-conic-gradient(#ffecd2 0 25%, #0000 0 50%) 0 0 / calc(2 * 32px)
+      calc(2 * 32px),
+    radial-gradient(#0000 66%, #ea8694 68% 70%, #0000 72%) 0 calc(32px / 2) /
+      32px 32px #ffecd2;
+  width: 100vw;
+  height: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: #c6b399;
+  width: 100vw;
+  height: auto;
+  text-align: center;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-box-shadow: 3px 5px 10px 3px rgba(0, 0, 0, 0.56);
+  -moz-box-shadow: 3px 5px 10px 3px rgba(0, 0, 0, 0.56);
+  box-shadow: 3px 5px 10px 3px rgba(0, 0, 0, 0.56);
+  padding: 15px;
+}
+
+.ulHeader,
+.ulFooter {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  padding: 10px;
+  font-size: 20px;
+}
+
+.mainbg {
+  width: 70vw;
+  min-height: 100vh;
+  background-color: #c6b399;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  -webkit-box-shadow: -0.5px 19px 19.5px 14px rgba(0, 0, 0, 0.56);
+  -moz-box-shadow: -0.5px 19px 19.5px 14px rgba(0, 0, 0, 0.56);
+  box-shadow: -0.5px 19px 19.5px 14px rgba(0, 0, 0, 0.56);
+  padding: 25px;
+  margin-bottom: -50px;
+}
+
+.content {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.footer {
+  background-color: #c6b399;
+  width: 100vw;
+  height: auto;
+  text-align: center;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-box-shadow: 3px -5px 10px 3px rgba(0, 0, 0, 0.56);
+  -moz-box-shadow: 3px -5px 10px 3px rgba(0, 0, 0, 0.56);
+  box-shadow: 3px -5px 10px 3px rgba(0, 0, 0, 0.56);
+  padding: 15px;
+}
+
+.imgfooter {
+  max-width: 25px;
+  max-height: 25px;
+  margin-right: 15px;
+  margin-bottom: -6px;
+}
+
+a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+.ulHeader li a.active {
+  font-weight: bold;
+  color: #c6b399;
+  background-color: #ce8892;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.acessoRapido {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  text-align: center;
+}
+
+.headerlogin {
+  background-color: #c6b399;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+  height: 60px;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.mainbglogin {
+  width: 70vw;
+  height: 70vh;
+  background-color: #c6b399;
+  position: relative;
+  margin: 100px auto 50px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 25px;
+  -webkit-box-shadow: 3px 3px 32px 5.5px #454545;
+  -moz-box-shadow: 3px 3px 32px 5.5px #454545;
+  box-shadow: 3px 3px 32px 5.5px #454545;
+}
+
+.footerlogin {
+  background-color: #c6b399;
+  width: 100vw;
+  height: 60px;
+  text-align: center;
+  padding: 15px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+.bglogin {
+  background: #aaa79e;
+}
+
+.mainbglogin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #d4c1a5;
+}
+
+#mainl {
+  background-color: #c5b29b;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  padding: 12px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  padding: 16px;
+  margin-left: -22px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  text-align: left;
+  font-weight: bold;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px;
+  background-color: #4f4f4f;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #333;
+}
